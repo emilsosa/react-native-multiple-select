@@ -38,6 +38,7 @@ export interface MultiSelectProps {
     altFontFamily?: string;
     hideSubmitButton?: boolean;
     hideDropdown?: boolean;
+    hideSelectedItemIcon?: boolean;
     submitButtonColor?: string;
     submitButtonText?: string;
     textColor?: string;
@@ -57,4 +58,5 @@ export interface MultiSelectProps {
 
 export default class MultiSelect extends React.Component<MultiSelectProps> {
     getSelectedItemsExt: (items: any[]) => React.ReactNode;
+    dismissSelector: () => void;
 }
