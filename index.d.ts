@@ -54,6 +54,7 @@ export interface MultiSelectProps {
     flatListProps?: FlatListProps<any>;
     filterMethod?: string;
     noItemsText?: string;
+    onOpen?: () => void;
 }
 
 export default class MultiSelect extends React.Component<MultiSelectProps> {
